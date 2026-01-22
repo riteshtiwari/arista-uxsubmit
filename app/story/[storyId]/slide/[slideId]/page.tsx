@@ -14,6 +14,23 @@ async function getStories(): Promise<PresentationData> {
     }
 }
 
+export async function generateStaticParams() {
+    const data = await getStories();
+    const params: { storyId: string; slideId: string }[] = [];
+    
+    // Generate all story/slide combinations
+    data.stories.forEach((story) => {
+        story.slides.forEach((_, slideIndex) => {
+            params.push({
+                storyId: story.id.toString(),
+                slideId: slideIndex.toString(),
+            });
+        });
+    });
+    
+    return params;
+}
+
 export default async function Page() {
     const data = await getStories();
 
