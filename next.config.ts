@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
+// Use basePath for embedded deployment (in portfolio), skip for standalone
+const isStandalone = process.env.NEXT_PUBLIC_STANDALONE === 'true';
+
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/presentations/designed-correctly',
+  ...(isStandalone ? {} : { basePath: '/presentations/designed-correctly' }),
   images: {
     unoptimized: true,
   },
