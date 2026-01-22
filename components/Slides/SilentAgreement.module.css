@@ -1,0 +1,114 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.meetingLabel {
+    fill: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Zoom tiles */
+.zoomTile {
+    fill: var(--bg-tertiary);
+    stroke: var(--text-muted);
+    stroke-width: 2;
+}
+
+.personHead {
+    fill: var(--text-muted);
+    opacity: 0.6;
+}
+
+.personBody {
+    fill: var(--text-muted);
+    opacity: 0.5;
+}
+
+.roleLabel {
+    fill: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Chat */
+.chatBox {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.chatTitle {
+    fill: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chatMessage {
+    fill: var(--accent-emerald);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Reality check */
+.laterLabel {
+    fill: currentColor;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.questionBox {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-coral);
+    stroke-width: 2;
+}
+
+.questionLabel {
+    fill: var(--accent-coral);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.questionText {
+    fill: var(--text-primary);
+    font-style: italic;
+}
+
+.answerText {
+    fill: var(--text-muted);
+    opacity: 0.7;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

@@ -1,0 +1,100 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.sideLabel {
+    fill: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Left side: The Map (clean, idealized) */
+.mapStep {
+    fill: var(--bg-secondary);
+    stroke: var(--text-muted);
+    stroke-width: 2;
+}
+
+.mapArrow {
+    stroke: var(--text-muted);
+    stroke-width: 2;
+    fill: none;
+}
+
+.stepText {
+    fill: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Right side: The Territory (messy reality) */
+.territoryStep {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-cyan);
+    stroke-width: 2;
+}
+
+.stepTextTerritory {
+    fill: var(--text-primary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.messyArrow {
+    stroke: var(--accent-cyan);
+    stroke-width: 2;
+    fill: none;
+}
+
+.errorBox {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-coral);
+    stroke-width: 1.5;
+}
+
+.errorText {
+    fill: var(--accent-coral);
+    font-weight: 500;
+}
+
+.chaosPoint {
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+.annotation {
+    fill: var(--text-muted);
+    font-style: italic;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

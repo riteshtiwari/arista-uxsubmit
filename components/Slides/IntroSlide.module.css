@@ -1,0 +1,92 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+    color: currentColor;
+}
+
+.titleBreak {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+    margin-top: -10px;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: var(--text-secondary);
+    margin: 10px 0 30px 0;
+    font-style: italic;
+}
+
+.visualContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.visual {
+    width: 100%;
+    height: auto;
+}
+
+.pathLabel {
+    fill: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.eventInfo {
+    margin-top: 30px;
+}
+
+.event {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.presenter {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--text-muted);
+    width: 400px;
+    max-width: 90%;
+}
+
+.name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 8px 0;
+}
+
+.role {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    font-weight: 500;
+}

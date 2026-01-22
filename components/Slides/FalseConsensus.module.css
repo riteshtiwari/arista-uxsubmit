@@ -1,0 +1,106 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+/* Internal bubble */
+.bubble {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-violet);
+    stroke-width: 3;
+    stroke-dasharray: 8 8;
+    opacity: 0.4;
+}
+
+.bubbleLabel {
+    fill: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.teamHead {
+    fill: var(--accent-violet);
+    opacity: 0.8;
+}
+
+.teamBody {
+    fill: var(--accent-violet);
+    opacity: 0.6;
+}
+
+.agreementText {
+    fill: var(--accent-emerald);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Divider */
+.dividerLabel {
+    fill: var(--text-muted);
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* External reality */
+.realityLabel {
+    fill: currentColor;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.userHead {
+    fill: var(--text-muted);
+    opacity: 0.6;
+}
+
+.userBody {
+    fill: var(--text-muted);
+    opacity: 0.5;
+}
+
+.reactionIcon {
+    fill: var(--accent-amber);
+    font-weight: 700;
+}
+
+.feedbackText {
+    fill: var(--accent-coral);
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

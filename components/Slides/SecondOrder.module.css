@@ -1,0 +1,122 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.timeLabel {
+    fill: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.actionPoint {
+    filter: drop-shadow(0 0 12px currentColor);
+}
+
+.actionLabel {
+    fill: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actionSublabel {
+    fill: var(--text-secondary);
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* Effects */
+.positiveEffect {
+    fill: var(--accent-emerald);
+    stroke: var(--accent-emerald);
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px var(--accent-emerald));
+}
+
+.warningEffect {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-amber);
+    stroke-width: 3;
+    filter: drop-shadow(0 0 6px var(--accent-amber));
+}
+
+.negativeEffect {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-coral);
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px var(--accent-coral));
+}
+
+.crisisEffect {
+    fill: var(--accent-coral);
+    stroke: var(--accent-coral);
+    stroke-width: 4;
+    filter: drop-shadow(0 0 12px var(--accent-coral));
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.effectLabel {
+    fill: var(--accent-emerald);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.problemLabel {
+    fill: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.crisisLabel {
+    fill: var(--text-primary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.annotation {
+    fill: var(--text-muted);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

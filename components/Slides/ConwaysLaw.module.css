@@ -1,0 +1,88 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.diagramContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diagram {
+    width: 100%;
+    height: 100%;
+}
+
+/* Org Chart Styling */
+.orgBox {
+    fill: var(--bg-secondary);
+    stroke: var(--text-muted);
+    stroke-width: 2;
+}
+
+.orgLine {
+    stroke: var(--text-muted);
+    stroke-width: 2;
+}
+
+.orgText {
+    fill: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.orgTextSmall {
+    fill: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* System Architecture Styling */
+.systemBox {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.systemLine {
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.systemText {
+    fill: var(--text-primary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.systemTextSmall {
+    fill: var(--text-primary);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* Arrow */
+.arrow {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

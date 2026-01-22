@@ -1,0 +1,107 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.columnHeader {
+    fill: var(--text-secondary);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* UI terms (generic, wrong) */
+.uiBox {
+    fill: var(--bg-secondary);
+    stroke: var(--text-muted);
+    stroke-width: 2;
+}
+
+.uiText {
+    fill: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Domain terms (specific, correct) */
+.domainBox {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.domainText {
+    fill: var(--accent-emerald);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Confusion indicator */
+.confusionLabel {
+    fill: var(--accent-coral);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Support ticket */
+.ticketBox {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-coral);
+    stroke-width: 2;
+}
+
+.ticketTitle {
+    fill: var(--accent-coral);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ticketBody {
+    fill: var(--text-primary);
+    font-style: italic;
+}
+
+/* Designer confidence (misplaced) */
+.confidenceBox {
+    fill: var(--bg-secondary);
+    stroke: var(--text-muted);
+    stroke-width: 1;
+    opacity: 0.6;
+}
+
+.confidenceText {
+    fill: var(--text-muted);
+    font-style: italic;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

@@ -1,0 +1,146 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.sideLabel {
+    fill: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Figma side (perfect) */
+.figmaScreen {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-emerald);
+    stroke-width: 3;
+}
+
+.figmaCard {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.cardText {
+    fill: var(--accent-emerald);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.figmaData {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-emerald);
+    stroke-width: 1;
+}
+
+.dataText {
+    fill: var(--accent-emerald);
+    font-weight: 500;
+}
+
+.successCircle {
+    fill: var(--accent-emerald);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.successText {
+    fill: var(--bg-primary);
+    font-weight: 700;
+}
+
+/* Production side (broken) */
+.prodScreen {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-coral);
+    stroke-width: 3;
+}
+
+.errorBox {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-coral);
+    stroke-width: 2;
+}
+
+.errorText {
+    fill: var(--accent-coral);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.errorSubtext {
+    fill: var(--accent-coral);
+    opacity: 0.7;
+}
+
+.loadingText {
+    fill: var(--accent-amber);
+    font-weight: 600;
+}
+
+.conflictBox {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-amber);
+    stroke-width: 2;
+}
+
+.conflictText {
+    fill: var(--accent-amber);
+    font-weight: 600;
+}
+
+.failureCircle {
+    fill: var(--accent-coral);
+    stroke: var(--accent-coral);
+    stroke-width: 2;
+}
+
+.failureText {
+    fill: var(--bg-primary);
+    font-weight: 700;
+}
+
+.statusText {
+    fill: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.bottomCaption {
+    fill: var(--text-muted);
+    font-size: 13px;
+    font-style: italic;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

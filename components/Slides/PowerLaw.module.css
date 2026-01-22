@@ -1,0 +1,125 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.chartContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+}
+
+.chartTitle {
+    fill: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.axisLabel {
+    fill: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.featureName {
+    fill: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Usage bars by complexity */
+.barSimple {
+    fill: var(--accent-emerald);
+    opacity: 0.9;
+}
+
+.barMedium {
+    fill: var(--accent-amber);
+    opacity: 0.8;
+}
+
+.barComplex {
+    fill: var(--accent-coral);
+    opacity: 0.7;
+}
+
+.percentage {
+    fill: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Effort labels */
+.effortSimple {
+    fill: var(--accent-emerald);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.effortMedium {
+    fill: var(--accent-amber);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.effortComplex {
+    fill: var(--accent-coral);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Annotations */
+.annotationBox {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-coral);
+    stroke-width: 2;
+}
+
+.annotationText {
+    fill: var(--accent-coral);
+    font-weight: 700;
+}
+
+.annotationSubtext {
+    fill: var(--text-secondary);
+    font-style: italic;
+}
+
+/* 80/20 rule box */
+.ruleBox {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.ruleText {
+    fill: var(--accent-emerald);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

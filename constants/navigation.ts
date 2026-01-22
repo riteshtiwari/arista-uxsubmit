@@ -1,0 +1,20 @@
+// Curated selection with hierarchical sections
+// This array defines the order and content of the curated view
+export const CURATED_STORY_IDS = [
+    0,   // Introduction
+    17,  // Section 1: Seeing the Wrong Thing
+    1,   //   - The Bullet Hole
+    2,   //   - The Streetlight Effect
+    4,   //   - The Map Is Not the Territory
+    18,  // Section 2: Passing Review ≠ Being Right
+    15,  //   - The PM Said It Was Fine
+    8,   //   - False Consensus Effect
+    12,  //   - Local vs Global Optimization
+    14,  //   - The Perfectly Consistent Wrong Thing
+    19,  // Section 3: Consequences Nobody Designs For
+    6,   //   - Second-Order Effects
+    7,   //   - The Dashboard That Died at 10x
+    9,   //   - Regression to the Mean
+    20,  // Section 4: The Hard Truth
+    11   //   - Not Understanding the Domain
+];

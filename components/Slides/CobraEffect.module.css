@@ -1,0 +1,111 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+/* Bounty poster */
+.poster {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-coral);
+    stroke-width: 3;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+}
+
+.posterTitle {
+    fill: var(--accent-coral);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.bountyText {
+    fill: var(--text-primary);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bountySubtext {
+    fill: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Arrow */
+.arrow {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* Cobra farm */
+.farm {
+    fill: var(--bg-secondary);
+    stroke: var(--text-muted);
+    stroke-width: 2;
+    stroke-dasharray: 8 8;
+}
+
+.farmLabel {
+    fill: var(--text-secondary);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cobra {
+    transition: opacity 0.3s ease;
+}
+
+.cobra:hover {
+    opacity: 1 !important;
+}
+
+/* Money counter */
+.moneyCounter {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.moneyText {
+    fill: var(--accent-emerald);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Problem label */
+.problemLabel {
+    font-size: 18px;
+    font-weight: 600;
+    fill: currentColor;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

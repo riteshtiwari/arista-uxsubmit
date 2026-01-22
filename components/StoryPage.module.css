@@ -1,0 +1,52 @@
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: var(--bg-primary);
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    overflow: hidden;
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.centered {
+    margin-left: 0;
+    width: 100%;
+}
+
+.showNavButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 500;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--text-muted);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+.showNavButton:hover {
+    opacity: 1;
+    border-color: var(--text-secondary);
+    color: var(--text-secondary);
+    transform: translateX(2px);
+}
+
+.showNavButton svg {
+    width: 16px;
+    height: 16px;
+}

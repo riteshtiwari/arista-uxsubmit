@@ -1,0 +1,762 @@
+{
+    "stories": [
+        {
+            "id": 0,
+            "title": "Introduction",
+            "category": "Opening",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "IntroSlide",
+                    "content": {
+                        "headline": "When Good Design Decisions Go Bad"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "customComponent": "PositioningSlide",
+                    "content": {
+                        "headline": "This is not about..."
+                    }
+                },
+                {
+                    "type": "custom",
+                    "customComponent": "OrientationSlide",
+                    "content": {
+                        "headline": "How this talk is structured"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "The Bullet Hole",
+            "category": "Survivorship Bias",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "BomberPlane",
+                    "content": {
+                        "headline": "The Planes That Never Came Back"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "During World War II, the U.S. military studied returning bombers to decide where to add armor.",
+                        "body": "Analysts carefully mapped bullet holes on the planes that made it home. The data looked clear.\n\nReinforce the most damaged areas.",
+                        "source": "Abraham Wald, Statistical Research Group, 1943"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"You're looking at the wrong planes.\"",
+                        "subheadline": "— Abraham Wald",
+                        "body": "The holes you see are where a plane can get shot and survive. You should be worried about the ones that didn't return."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Visible success is biased data",
+                        "takeaways": [
+                            "What survives is not what's most resilient — it's what didn't fail yet",
+                            "Optimizing for what looks good reinforces the wrong thing",
+                            "You end up strengthening the least critical parts of the system"
+                        ],
+                        "body": "Your happy-path demo is the plane that returned. The real product lives in failed setups, abandoned workflows, permission errors, rollback paths, and 2am incidents."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "The Streetlight Effect",
+            "category": "Observation Bias",
+            "accentColor": "cyan",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "StreetlightSearch",
+                    "content": {
+                        "headline": "Where the Light Is"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "A drunk searches for lost keys under a streetlight",
+                        "body": "Not because that's where he dropped them, but because that's where the light is.\n\nWe collect data that is easy to collect.",
+                        "source": "Kaplan, A. (1964). The Conduct of Inquiry."
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "We confuse visibility with importance",
+                        "body": "What's missing: Data that is hard, expensive, or uncomfortable to obtain.\n\nThe most critical insights often live in the shadows."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Measure what matters, not what's easy",
+                        "takeaways": [
+                            "Analytics show clicks and flows, not confusion",
+                            "Workarounds leave no trace in your dashboards",
+                            "Shadow IT usage is invisible by design"
+                        ],
+                        "body": "Your analytics dashboard is the streetlight. The real UX problems are in the dark."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Conway's Law",
+            "category": "Organizational Constraint",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "ConwaysLaw",
+                    "content": {
+                        "headline": "Architecture is Frozen Politics"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "Organizations design systems that mirror their communication structures",
+                        "body": "If you have four teams building a compiler, you'll get a four-pass compiler. The structure of your software reflects the structure of your org chart.",
+                        "source": "Conway, M. (1968). How Do Committees Invent?"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Architecture is frozen politics\"",
+                        "body": "What's missing: The org charts, incentives, and power structures that shaped the design.\n\nInconsistent UX isn't a design failure — it's an organizational symptom."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Design systems can't fix org dysfunction",
+                        "takeaways": [
+                            "Fragmented UX often reflects team boundaries, not user needs",
+                            "Siloed teams produce siloed experiences",
+                            "If you want unified UX, you need unified teams"
+                        ],
+                        "body": "That inconsistent navigation bar? It's not a CSS problem. It's two teams who don't talk to each other."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "The Map Is Not the Territory",
+            "category": "Representation Error",
+            "accentColor": "cyan",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "MapTerritory",
+                    "content": {
+                        "headline": "Abstractions Lie by Omission"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "Models simplify reality — but are often mistaken for reality itself",
+                        "body": "Your user journey map shows a clean path. The reality includes forgotten passwords, permission errors, SSO redirects, and a dozen workarounds.\n\nDiagrams, flows, and dashboards hide what actually happens.",
+                        "source": "Korzybski, A. (1933). Science and Sanity."
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"The map is not the territory\"",
+                        "body": "What's missing: Messy real-world behavior, exception paths, edge cases, and human improvisation.\n\nYour perfectly documented workflow is fiction."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Test the territory, not the map",
+                        "takeaways": [
+                            "User journeys hide exception paths that dominate real usage",
+                            "Observational research beats user journey diagrams",
+                            "If it's not in production logs, it's not real"
+                        ],
+                        "body": "That seamless onboarding flow in your deck? Watch 5 real users try it. The territory will surprise you."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "The Cobra Effect",
+            "category": "Perverse Incentives",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "CobraEffect",
+                    "content": {
+                        "headline": "When Incentives Backfire"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "British colonial India offered a bounty for dead cobras to reduce the population",
+                        "body": "Enterprising individuals began breeding cobras for income. When the program ended, breeders released their cobras—making the original problem worse.\n\nIncentives don't just change behavior. They change entire systems.",
+                        "source": "Siebert, H. (2001). The Cobra Effect"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Incentives change systems, not just behavior\"",
+                        "body": "What's missing: Second-order effects, gaming, and unintended consequences.\n\nPeople optimize for the metric, not the outcome."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Mandates create checkbox behavior",
+                        "takeaways": [
+                            "Forcing usage through mandates creates compliance, not engagement",
+                            "Users will game any system with perverse incentives",
+                            "Measure outcomes, not activities"
+                        ],
+                        "body": "That mandatory UX training? People are passing the quiz without watching the videos. You incentivized completion, not learning."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Second-Order Effects",
+            "category": "Delayed Consequences",
+            "accentColor": "amber",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "SecondOrder",
+                    "content": {
+                        "headline": "The Real Impact Shows Up Later"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "The real impact shows up later, elsewhere",
+                        "body": "That quick UX patch shipped in two days? Six months later it's spawned workarounds, breaking changes, and a support backlog.\n\nWe see immediate improvements. We miss downstream complexity.",
+                        "source": "Taleb, N. (2010). The Black Swan"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Short-term wins create long-term debt\"",
+                        "body": "What's missing: Downstream complexity, maintenance burden, and cascading failures.\n\nThe crisis arrives on a schedule you didn't plan for."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Always ask: 'Then what?'",
+                        "takeaways": [
+                            "Quick UX patches increase long-term operational cost",
+                            "Every workaround is a time bomb set to 'later'",
+                            "The real design question is 'What happens in 6 months?'"
+                        ],
+                        "body": "That temporary modal you added? It's been there for 3 years. Users built workflows around it. Now you can't remove it."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "The Dashboard That Died at 10x",
+            "category": "Ignoring Scalability",
+            "accentColor": "amber",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "ScalabilityBreak",
+                    "content": {
+                        "headline": "Works for 10, Fails at 10,000"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "A product worked flawlessly for small teams. Then a large customer onboarded.",
+                        "body": "Lists became unbounded. Search became slow. Permissions became complicated. The same UI started producing outages and user errors.\n\nThe design wasn't wrong — it was unscaled.",
+                        "source": "The 13 Costly Mistakes in Enterprise Product Design [Part-1] (May 26, 2023)"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Most enterprise UX breaks aren't at launch — they break at scale\"",
+                        "body": "What's missing: Performance budgets, virtualization, bulk operations, and progressive disclosure.\n\nAt scale, slow = confusing = risky. Time becomes the interface."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Design for growth or design for rework",
+                        "takeaways": [
+                            "Scalability is a UX requirement: pagination, virtualization, bulk actions",
+                            "Test with realistic data volumes in your prototypes",
+                            "Performance budgets matter — slow is broken UX"
+                        ],
+                        "body": "Empty states become pagination storms. Filters become mandatory. Tables become unusable. Bake in scale from day one."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "title": "False Consensus Effect",
+            "category": "Assumption Bias",
+            "accentColor": "violet",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "FalseConsensus",
+                    "content": {
+                        "headline": "Everyone On The Team Agrees"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "We assume others think like us",
+                        "body": "Your internal team loves the new design. Everyone agrees it's intuitive. You ship it.\n\nReal users are confused. The workflows don't match their mental models. Support tickets flood in.",
+                        "source": "Ross et al. (1977). False Consensus Effect"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Consensus ≠ correctness\"",
+                        "body": "What's missing: User disagreement, different mental models, and external reality.\n\nInternal dogfooding creates an echo chamber."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Test with strangers, not teammates",
+                        "takeaways": [
+                            "Internal dogfooding hides real usability gaps",
+                            "Your team knows too much — they can't think like beginners",
+                            "Watch users who've never seen your product before"
+                        ],
+                        "body": "That feature everyone on the team loves? Watch a customer use it for the first time. The bubble will burst."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Regression to the Mean",
+            "category": "Statistical Illusion",
+            "accentColor": "cyan",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "RegressionMean",
+                    "content": {
+                        "headline": "We Over-Credit Design Changes"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "Extreme outcomes tend to normalize naturally",
+                        "body": "Metrics crash. You panic, redesign the flow, and ship the fix. Two weeks later, metrics recover.\n\nYou credit the redesign. But the data was just returning to normal — it would have happened anyway.",
+                        "source": "Galton, F. (1886). Regression Towards Mediocrity"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Not every improvement is caused by the redesign\"",
+                        "body": "What's missing: Random variation, natural cycles, and baseline trends.\n\nWe attribute to intervention what was statistical normalization."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Wait for the counterfactual",
+                        "takeaways": [
+                            "Extreme metrics naturally regress — don't panic and redesign",
+                            "Run A/B tests to separate signal from noise",
+                            "Compare against a control group, not against the crisis"
+                        ],
+                        "body": "Conversion dropped 40%? Wait. Check for external factors. Don't ship a 'fix' until you know what actually broke."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Power Law of Effort",
+            "category": "User Behavior",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "PowerLaw",
+                    "content": {
+                        "headline": "80% of Users Use 20% of Features"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "Most users only use the simplest part of any system",
+                        "body": "Login? 95% usage. Advanced filters? 12%. Admin settings? 2%.\n\nThe power law is brutal: complexity kills adoption. Every advanced feature you build serves fewer users.",
+                        "source": "Nielsen, J. (1993). Usability Engineering"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Complexity tax is real\"",
+                        "body": "What's missing: Drop-off rates, feature avoidance, and non-usage data.\n\nAdmin-heavy tools fail when basic tasks aren't effortless."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Optimize the common path, not the edge case",
+                        "takeaways": [
+                            "Track usage by feature — you'll be horrified",
+                            "Make the top 3 tasks ridiculously easy",
+                            "Advanced features can require more effort if basics are effortless"
+                        ],
+                        "body": "Your product has 50 features. Users use 5. If those 5 aren't perfect, the other 45 don't matter."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Not Understanding the Domain",
+            "category": "Terminology Mismatch",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "DomainKnowledge",
+                    "content": {
+                        "headline": "The UI That Looked Correct — and Was Conceptually Wrong"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "A design team shipped flows that looked clean but didn't match how the industry actually thinks",
+                        "body": "Terminology was off. Workflows skipped mandatory steps. Roles were misunderstood. The product didn't fail because the UI was ugly — it failed because it didn't reflect the domain's mental model.\n\nIf you don't speak the domain, you're designing a translation error.",
+                        "source": "More Costly Mistakes in Enterprise Product Design [Part-2] (May 26, 2023)"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Domain knowledge is the backbone of enterprise UX\"",
+                        "body": "What's missing: Industry taxonomy, mandatory compliance steps, and user mental models.\n\nWithout domain depth, you optimize the wrong thing — and make confident mistakes."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Learn the language before designing the interface",
+                        "takeaways": [
+                            "Shadow real users doing real work — don't design from imagination",
+                            "Build a shared terminology glossary with SMEs and engineering",
+                            "Great enterprise UX feels 'obvious' only because it matches the user's conceptual model"
+                        ],
+                        "body": "You called it 'Submit.' They call it 'File a claim.' That gap is why your clean UI confuses everyone."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Local vs Global Optimization",
+            "category": "Systems Thinking",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "LocalGlobal",
+                    "content": {
+                        "headline": "Each Team Optimized Its Part"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "Each team optimizes its part, but the system gets worse overall",
+                        "body": "Onboarding: 95% completion. Dashboard: Fast load. Checkout: 88% conversion. Every screen optimized.\n\nEnd-to-end workflow completion? 32%. Data doesn't transfer. Patterns clash. Users re-enter info.",
+                        "source": "Senge, P. (1990). The Fifth Discipline"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Optimizing parts can harm the whole\"",
+                        "body": "What's missing: Cross-team coordination, end-to-end user journeys, and system-level metrics.\n\nGreat individual screens don't guarantee a usable workflow."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Measure the end-to-end experience",
+                        "takeaways": [
+                            "Track completion rates for full user journeys, not just individual screens",
+                            "Assign owners to cross-team workflows",
+                            "Local metrics can look great while the system fails"
+                        ],
+                        "body": "Your login is perfect. Your dashboard is fast. Your checkout converts. So why did users abandon mid-flow?"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "title": "The Meeting Where Everyone Agreed",
+            "category": "Unchallenged Assumptions",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "SilentAgreement",
+                    "content": {
+                        "headline": "The Quietest Meeting"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "A design was presented. PM agreed. Engineering agreed. No objections. No questions. It shipped.",
+                        "body": "Three months later, users asked: 'Why does it work this way?'\n\nNo one remembered why.\n\nSilence feels like alignment — until reality disagrees."
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Agreement is not validation\"",
+                        "body": "What's missing: Critical questions, edge cases, and 'what breaks?' conversations.\n\nUnchallenged assumptions are the most expensive ones."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Invite dissent before you ship",
+                        "takeaways": [
+                            "If nobody asks 'what breaks?', something will",
+                            "Silent nods don't mean people understand — they mean they're being polite",
+                            "Schedule 'red team' reviews where the goal is to find problems"
+                        ],
+                        "body": "That meeting where everyone agreed? That's when you're in the most danger."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "title": "The Perfectly Consistent Wrong Thing",
+            "category": "Design Systems",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "ConsistentWrong",
+                    "content": {
+                        "headline": "Consistent, Polished, Useless"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "A team spent weeks aligning spacing, typography, tokens. Everything was consistent. Everything looked right.",
+                        "body": "Users still couldn't complete their task without docs.\n\nConsistency amplifies bad decisions."
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Consistency is a multiplier, not a goal\"",
+                        "body": "What's missing: Workflow validation, user testing, and systems thinking.\n\nA broken workflow repeated perfectly is still broken."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Systems thinking beats component thinking",
+                        "takeaways": [
+                            "Perfect tokens won't fix a confusing information architecture",
+                            "Consistency makes good patterns better and bad patterns worse",
+                            "Test the workflow, not just the components"
+                        ],
+                        "body": "Your design system is flawless. Your spacing is perfect. So why do users still need a 20-page guide?"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "title": "The PM Said It Was Fine",
+            "category": "Designer Accountability",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "PMSignedOff",
+                    "content": {
+                        "headline": "The PM Signed Off"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "A designer noticed an edge case. It felt odd. PM said: 'Let's ship — we'll fix later.'",
+                        "body": "Later never came.\n\nThe edge case became the common case.\n\nDelegated thinking is still your responsibility."
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Ownership doesn't end at approval\"",
+                        "body": "What's missing: Designer accountability, speaking up, and owning the warning.\n\nPM approval doesn't absolve design accountability."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "If you can see the crack, you own the warning",
+                        "takeaways": [
+                            "Document your concerns in writing before shipping",
+                            "PM approval is a business decision, not a design validation",
+                            "Your job isn't just to deliver — it's to warn"
+                        ],
+                        "body": "You saw the crack. You stayed quiet. PM approval doesn't make it disappear."
+                    }
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "title": "The Design That Worked in Figma",
+            "category": "Prototype vs Reality",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "FigmaVsProduction",
+                    "content": {
+                        "headline": "It Worked in the Prototype"
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "The prototype was flawless. Transitions were smooth. Everything made sense.",
+                        "body": "In production: APIs failed, data loaded slowly, states overlapped.\n\nThe design never considered partial failure.\n\nFigma has no latency."
+                    }
+                },
+                {
+                    "type": "shock",
+                    "content": {
+                        "headline": "\"Real systems are hostile\"",
+                        "body": "What's missing: Loading states, error states, empty states, and partial failure handling.\n\nIf you didn't design loading, error, and empty states — you designed fiction."
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Production behavior is part of UX",
+                        "takeaways": [
+                            "Design the loading state first, not last",
+                            "Error states aren't edge cases — they're Tuesday",
+                            "Test your design with throttled network and API failures"
+                        ],
+                        "body": "Your prototype is perfect. Your production experience crashes when the API is slow. Which one matters?"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Where Our Attention Goes",
+            "category": "Section Title",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "SectionTitleSlide",
+                    "content": {
+                        "headline": "Where Our Attention Goes"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "title": "Why It Feels Right",
+            "category": "Section Title",
+            "accentColor": "amber",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "Section2TitleSlide",
+                    "content": {
+                        "headline": "Why It Feels Right"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "title": "What Breaks at Scale",
+            "category": "Section Title",
+            "accentColor": "violet",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "Section3TitleSlide",
+                    "content": {
+                        "headline": "What Breaks at Scale"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "title": "What Experience Reveals",
+            "category": "Section Title",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "Section4TitleSlide",
+                    "content": {
+                        "headline": "What Experience Reveals"
+                    }
+                }
+            ]
+        }
+    ]
+}

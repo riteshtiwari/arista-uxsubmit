@@ -1,0 +1,134 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.headline {
+    max-width: 900px;
+    color: var(--text-primary);
+}
+
+.sceneContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.scaleLabel {
+    fill: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Small scale - working */
+.dashboard {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-emerald);
+    stroke-width: 2;
+}
+
+.header {
+    fill: var(--bg-tertiary);
+    stroke: var(--text-muted);
+    stroke-width: 1;
+}
+
+.headerText {
+    fill: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.listItem {
+    fill: var(--bg-tertiary);
+    stroke: var(--text-muted);
+    stroke-width: 1;
+}
+
+.checkCircle {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-emerald);
+    stroke-width: 3;
+}
+
+/* Arrow */
+.arrow {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+.arrowLabel {
+    fill: var(--text-muted);
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Large scale - broken */
+.dashboardBroken {
+    fill: var(--bg-secondary);
+    stroke: var(--accent-coral);
+    stroke-width: 2;
+}
+
+.headerBroken {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-amber);
+    stroke-width: 1;
+}
+
+.listItemBroken {
+    fill: var(--bg-tertiary);
+    stroke: var(--text-muted);
+    stroke-width: 0.5;
+}
+
+.pagination {
+    fill: var(--bg-tertiary);
+    stroke: var(--accent-amber);
+    stroke-width: 1.5;
+}
+
+.paginationText {
+    fill: var(--text-secondary);
+    font-weight: 500;
+}
+
+.errorCircle {
+    fill: var(--accent-coral);
+    stroke: var(--accent-coral);
+    stroke-width: 3;
+    filter: drop-shadow(0 0 12px var(--accent-coral));
+}
+
+.errorIcon {
+    fill: var(--bg-primary);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.problemTag {
+    fill: var(--accent-coral);
+    font-weight: 600;
+}
+
+.caption {
+    margin-top: -10px;
+    font-style: italic;
+}

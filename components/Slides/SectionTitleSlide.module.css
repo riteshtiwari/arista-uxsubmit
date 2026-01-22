@@ -1,0 +1,94 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sectionNumber {
+    margin-bottom: 10px;
+}
+
+.numberText {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.titleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3em;
+    margin: 10px 0;
+}
+
+.titleWord {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0;
+    color: currentColor;
+}
+
+.visualContainer {
+    width: 100%;
+    max-width: 250px;
+    margin: 30px 0;
+}
+
+.visual {
+    width: 100%;
+    height: auto;
+}
+
+.questionMark {
+    fill: var(--text-muted);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--text-secondary);
+    margin: 10px 0;
+    font-style: italic;
+    max-width: 600px;
+}
+
+.storyCount {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-top: 2px solid var(--text-muted);
+    border-bottom: 2px solid var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.countNumber {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.countLabel {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}

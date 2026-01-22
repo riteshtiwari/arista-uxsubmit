@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "title": "Survivorship Bias",
+        "mental_model": "Cognitive Bias",
+        "story": "During WWII, analysts studied returning bombers to decide where to add armor. Abraham Wald pointed out the fatal flaw: they were only seeing the planes that survived.",
+        "what_people_see": "Bullet holes on returning aircraft.",
+        "what_is_missing": "Damage on planes that never came back.",
+        "moral": "Visible evidence is biased toward success.",
+        "enterprise_ux_translation": "Your happy-path demo is the plane that returned. The real UX problems are in failed setups, abandoned workflows, and midnight outages.",
+        "citations": [
+            "Wald, A. (1943). Statistical Research Group, Columbia University.",
+            "https://en.wikipedia.org/wiki/Survivorship_bias"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Streetlight Effect",
+        "mental_model": "Observation Bias",
+        "story": "A drunk searches for lost keys under a streetlight—not because that’s where he dropped them, but because that’s where the light is.",
+        "what_people_see": "Data that is easy to collect.",
+        "what_is_missing": "Data that is hard, expensive, or uncomfortable to obtain.",
+        "moral": "We confuse visibility with importance.",
+        "enterprise_ux_translation": "Analytics show clicks and flows, but not confusion, workarounds, or shadow IT usage.",
+        "citations": [
+            "Kaplan, A. (1964). The Conduct of Inquiry.",
+            "https://en.wikipedia.org/wiki/Streetlight_effect"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Conway’s Law",
+        "mental_model": "Organizational Constraint",
+        "story": "Systems mirror the communication structures of the organizations that build them.",
+        "what_people_see": "Screens, components, APIs.",
+        "what_is_missing": "Org charts, incentives, and power structures.",
+        "moral": "Architecture is frozen politics.",
+        "enterprise_ux_translation": "Inconsistent UX often reflects team boundaries, not user intent.",
+        "citations": [
+            "Conway, M. (1968). How Do Committees Invent?",
+            "https://en.wikipedia.org/wiki/Conway%27s_law"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Goodhart’s Law",
+        "mental_model": "Metric Failure",
+        "story": "When a measure becomes a target, it stops being a good measure.",
+        "what_people_see": "Green dashboards and rising KPIs.",
+        "what_is_missing": "Gaming, shortcuts, and degraded outcomes.",
+        "moral": "Metrics distort behavior.",
+        "enterprise_ux_translation": "Designing for adoption metrics can produce shallow usage instead of real value.",
+        "citations": [
+            "Goodhart, C. (1975). Problems of Monetary Management.",
+            "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "The Cobra Effect",
+        "mental_model": "Perverse Incentives",
+        "story": "A bounty on cobras led people to breed cobras—making the problem worse.",
+        "what_people_see": "Compliance with incentives.",
+        "what_is_missing": "Second-order effects.",
+        "moral": "Incentives change systems, not just behavior.",
+        "enterprise_ux_translation": "Forcing usage through mandates creates checkbox behavior, not engagement.",
+        "citations": [
+            "Siebert, H. (2001). The Economic Consequences of Globalization.",
+            "https://en.wikipedia.org/wiki/Perverse_incentive"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Local vs Global Optimization",
+        "mental_model": "Systems Thinking",
+        "story": "Each team optimizes its part, but the system gets worse overall.",
+        "what_people_see": "Fast local improvements.",
+        "what_is_missing": "End-to-end user experience.",
+        "moral": "Optimizing parts can harm the whole.",
+        "enterprise_ux_translation": "Great individual screens don’t guarantee a usable workflow.",
+        "citations": [
+            "Senge, P. (1990). The Fifth Discipline."
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Availability Heuristic",
+        "mental_model": "Cognitive Shortcut",
+        "story": "People judge likelihood based on how easily examples come to mind.",
+        "what_people_see": "Recent incidents or loud complaints.",
+        "what_is_missing": "Silent, systemic issues.",
+        "moral": "Memorable problems crowd out important ones.",
+        "enterprise_ux_translation": "Support tickets skew roadmap decisions toward loud customers.",
+        "citations": [
+            "Tversky & Kahneman (1973). Availability Heuristic.",
+            "https://en.wikipedia.org/wiki/Availability_heuristic"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Normalization of Deviance",
+        "mental_model": "Risk Accumulation",
+        "story": "Small failures become acceptable until catastrophe occurs.",
+        "what_people_see": "Workarounds that ‘usually work’.",
+        "what_is_missing": "Accumulated risk.",
+        "moral": "Absence of failure is not proof of safety.",
+        "enterprise_ux_translation": "Fragile workflows become institutional knowledge instead of design fixes.",
+        "citations": [
+            "Vaughan, D. (1996). The Challenger Launch Decision."
+        ]
+    },
+    {
+        "id": 9,
+        "title": "The Map Is Not the Territory",
+        "mental_model": "Representation Error",
+        "story": "Models simplify reality—but are often mistaken for reality itself.",
+        "what_people_see": "Diagrams, flows, dashboards.",
+        "what_is_missing": "Messy real-world behavior.",
+        "moral": "Abstractions lie by omission.",
+        "enterprise_ux_translation": "User journeys hide exception paths that dominate real usage.",
+        "citations": [
+            "Korzybski, A. (1933). Science and Sanity."
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Power Law of Effort",
+        "mental_model": "User Behavior",
+        "story": "Most users only use the simplest part of any system.",
+        "what_people_see": "Advanced features.",
+        "what_is_missing": "Drop-off and avoidance.",
+        "moral": "Complexity tax is real.",
+        "enterprise_ux_translation": "Admin-heavy tools fail when basic tasks aren’t effortless.",
+        "citations": [
+            "Nielsen, J. (1993). Usability Engineering."
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Hick’s Law",
+        "mental_model": "Decision Cost",
+        "story": "More choices increase decision time and error.",
+        "what_people_see": "Configurability.",
+        "what_is_missing": "Decision paralysis.",
+        "moral": "Choice has a cost.",
+        "enterprise_ux_translation": "Over-configurable products slow down operators under pressure.",
+        "citations": [
+            "Hick, W. (1952). On the Rate of Gain of Information."
+        ]
+    },
+    {
+        "id": 12,
+        "title": "The Curse of Knowledge",
+        "mental_model": "Expert Blindness",
+        "story": "Once you know something, it’s hard to imagine not knowing it.",
+        "what_people_see": "Expert workflows.",
+        "what_is_missing": "Beginner mental models.",
+        "moral": "Expert intuition doesn’t scale.",
+        "enterprise_ux_translation": "Tools designed by experts punish new users.",
+        "citations": [
+            "Camerer et al. (1989). The Curse of Knowledge."
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Second-Order Effects",
+        "mental_model": "Delayed Consequences",
+        "story": "The real impact shows up later, elsewhere.",
+        "what_people_see": "Immediate improvements.",
+        "what_is_missing": "Downstream complexity.",
+        "moral": "Short-term wins create long-term debt.",
+        "enterprise_ux_translation": "Quick UX patches increase long-term operational cost.",
+        "citations": [
+            "Taleb, N. (2010). The Black Swan."
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Bus Factor",
+        "mental_model": "Organizational Risk",
+        "story": "How many people can disappear before the system collapses?",
+        "what_people_see": "Hero contributors.",
+        "what_is_missing": "Knowledge redundancy.",
+        "moral": "Single points of failure are invisible until too late.",
+        "enterprise_ux_translation": "Undocumented workflows are UX debt.",
+        "citations": [
+            "https://en.wikipedia.org/wiki/Bus_factor"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "False Consensus Effect",
+        "mental_model": "Assumption Bias",
+        "story": "We assume others think like us.",
+        "what_people_see": "Internal agreement.",
+        "what_is_missing": "User disagreement.",
+        "moral": "Consensus ≠ correctness.",
+        "enterprise_ux_translation": "Internal dogfooding hides real usability gaps.",
+        "citations": [
+            "Ross et al. (1977). False Consensus Effect."
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Invisible Work",
+        "mental_model": "Hidden Labor",
+        "story": "Most effort goes into preventing failure, not producing output.",
+        "what_people_see": "Results.",
+        "what_is_missing": "Maintenance, monitoring, recovery.",
+        "moral": "Success hides effort.",
+        "enterprise_ux_translation": "Admin UX matters more than end-user polish.",
+        "citations": [
+            "Star & Strauss (1999). Invisible Work."
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Regression to the Mean",
+        "mental_model": "Statistical Illusion",
+        "story": "Extreme outcomes tend to normalize naturally.",
+        "what_people_see": "Attribution to intervention.",
+        "what_is_missing": "Random variation.",
+        "moral": "We over-credit design changes.",
+        "enterprise_ux_translation": "Not every improvement is caused by the redesign.",
+        "citations": [
+            "Galton, F. (1886). Regression Towards Mediocrity."
+        ]
+    },
+    {
+        "id": 18,
+        "title": "The Silent Majority",
+        "mental_model": "Participation Bias",
+        "story": "Most users never speak up.",
+        "what_people_see": "Feedback providers.",
+        "what_is_missing": "Disengaged users.",
+        "moral": "Silence is a signal.",
+        "enterprise_ux_translation": "Lack of complaints often means abandonment, not satisfaction.",
+        "citations": [
+            "Nielsen Norman Group. User Feedback Myths."
+        ]
+    }
+]
