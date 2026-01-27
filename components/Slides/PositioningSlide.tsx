@@ -13,7 +13,7 @@ export default function PositioningSlide({ content, accentColor }: PositioningSl
     const notAboutItems = [
         "taste",
         "pixels",
-        "best practices"
+        "design maturity"
     ];
 
     return (
