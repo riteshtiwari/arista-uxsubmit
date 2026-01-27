@@ -2,8 +2,11 @@
 // This array defines the order and content of the curated view
 export const CURATED_STORY_IDS = [
     0,   // Introduction
-    17,  // Section 1: Seeing the Wrong Thing
-    21,  //   - Where Our Attention Goes (combined: Bullet Hole + Streetlight Effect)
+    17,  // Section 1: WHERE OUR ATTENTION GOES
+    21,  //   - Bullet Hole
+    22,  //   - Streetlight
+    23,  //   - Enterprise Translation
+    24,  //   - Take Home
     18,  // Section 2: Passing Review ≠ Being Right
     15,  //   - The PM Said It Was Fine
     8,   //   - False Consensus Effect

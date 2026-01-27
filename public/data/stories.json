@@ -760,7 +760,7 @@
         },
         {
             "id": 21,
-            "title": "Where Our Attention Goes",
+            "title": "Bullet Hole",
             "category": "Cognitive Biases",
             "accentColor": "coral",
             "slides": [
@@ -770,14 +770,30 @@
                     "content": {
                         "headline": "The Planes That Never Came Back"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "title": "Streetlight",
+            "category": "Cognitive Biases",
+            "accentColor": "cyan",
+            "slides": [
                 {
                     "type": "custom",
                     "customComponent": "StreetlightSearch",
                     "content": {
                         "headline": "Where the Light Is"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "title": "Enterprise Translation",
+            "category": "Cognitive Biases",
+            "accentColor": "coral",
+            "slides": [
                 {
                     "type": "application",
                     "content": {
@@ -785,7 +801,15 @@
                         "takeaways": [],
                         "body": "Content to be added"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "title": "Take Home",
+            "category": "Cognitive Biases",
+            "accentColor": "coral",
+            "slides": [
                 {
                     "type": "application",
                     "content": {
