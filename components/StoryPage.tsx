@@ -21,7 +21,15 @@ export default function StoryPage({ stories }: StoryPageProps) {
 
     const [currentStory, setCurrentStory] = useState<Story | null>(null);
     const [totalSlides, setTotalSlides] = useState(0);
-    const [isNavVisible, setIsNavVisible] = useState(true);
+    
+    // Initialize isNavVisible from localStorage (client-side only)
+    const [isNavVisible, setIsNavVisible] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const saved = localStorage.getItem('presentationNavVisible');
+            return saved !== null ? saved === 'true' : true;
+        }
+        return true;
+    });
 
     // Initialize viewMode from localStorage (client-side only)
     const [viewMode, setViewMode] = useState<'curated' | 'all'>(() => {
@@ -31,6 +39,13 @@ export default function StoryPage({ stories }: StoryPageProps) {
         }
         return 'curated';
     });
+
+    // Persist isNavVisible changes to localStorage
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('presentationNavVisible', String(isNavVisible));
+        }
+    }, [isNavVisible]);
 
     // Persist viewMode changes to localStorage
     useEffect(() => {
