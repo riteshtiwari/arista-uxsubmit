@@ -3,6 +3,42 @@
 ## Overview
 Next.js-based presentation application for "When Good Design Decisions Go Bad" talk. Features story-based navigation with curated/all view modes.
 
+## ⚠️ CRITICAL: Local Development Setup
+
+### The Problem
+The app uses `output: 'export'` and `basePath: '/presentations/designed-correctly'` for static deployment on Vercel, which **BREAKS local dev server**.
+
+### The Solution
+**next.config.ts** conditionally disables these settings in development:
+
+```typescript
+const isDev = process.env.NODE_ENV === 'development';
+
+const nextConfig: NextConfig = {
+  // Only export in production (Vercel builds)
+  ...(!isDev ? { output: 'export' } : {}),
+  
+  // Skip basePath in dev for easier local testing
+  ...(isDev || isStandalone ? {} : { basePath: '/presentations/designed-correctly' }),
+};
+```
+
+### Local Development URLs
+- **Dev server:** `http://localhost:3000/story/0/slide/0`
+- **Production (Vercel):** `https://domain.com/presentations/designed-correctly/story/0/slide/0`
+
+### Why This Matters
+- `output: 'export'` causes 404s on dynamic routes in dev mode
+- `basePath` requires accessing full prefixed path
+- Without these fixes, you'll see "This page could not be found" errors locally
+- Production builds on Vercel work fine because they use the production config
+
+### Troubleshooting Local 404s
+1. Check `next.config.ts` has isDev conditional logic
+2. Verify you're accessing `/story/0/slide/0` not `/presentations/designed-correctly/story/0/slide/0`
+3. Clear `.next` cache: `rm -rf .next`
+4. Restart dev server
+
 ## Data Structure
 
 ### Stories (`/public/data/stories.json`)
