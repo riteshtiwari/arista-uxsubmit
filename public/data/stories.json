@@ -798,24 +798,265 @@
                     "type": "application",
                     "content": {
                         "headline": "Enterprise Translation",
-                        "takeaways": [],
-                        "body": "Content to be added"
+                        "takeaways": [
+                            "IN THE PRODUCT — This shows up as polished demos and \"green\" dashboards.",
+                            "IN OPERATIONS — This becomes blind spots during failures and escalations.",
+                            "IN REVIEWS — This gets missed because only visible metrics are discussed."
+                        ],
+                        "body": ""
                     }
                 }
             ]
         },
         {
             "id": 24,
-            "title": "Take Home",
+            "title": "Lesson",
             "category": "Cognitive Biases",
             "accentColor": "coral",
             "slides": [
                 {
+                    "type": "custom",
+                    "customComponent": "LessonSlide",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "We didn't miss the problem.",
+                            "We trained ourselves to not see it."
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "title": "The PM Said It Was Fine",
+            "category": "Designer Accountability",
+            "accentColor": "amber",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "PMSignedOff",
+                    "content": {
+                        "headline": "The PM Signed Off"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "title": "False Consensus Effect",
+            "category": "Assumption Bias",
+            "accentColor": "violet",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "FalseConsensus",
+                    "content": {
+                        "headline": "Everyone On The Team Agrees"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "title": "Enterprise Translation",
+            "category": "Designer Accountability",
+            "accentColor": "amber",
+            "slides": [
+                {
                     "type": "application",
                     "content": {
-                        "headline": "Take Home",
+                        "headline": "",
+                        "takeaways": [
+                            "IN THE PRODUCT — This shows up as Authority replacing evidence. Internal comfort replacing user reality",
+                            "IN OPERATIONS — This becomes Fragile systems that look stable, Tools that fail under pressure",
+                            "IN REVIEWS — This gets missed because Disagreement feels risky. Silence looks like consensus."
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "title": "Lesson",
+            "category": "Designer Accountability",
+            "accentColor": "amber",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "LessonSlide",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "We didn't choose wrong. We chose easy.",
+                            "And easy feels right —until it fails."
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "title": "The Dashboard That Died at 10x",
+            "category": "Ignoring Scalability",
+            "accentColor": "violet",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "ScalabilityBreak",
+                    "content": {
+                        "headline": "Works for 10, Fails at 10,000"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "title": "Second-Order Effects",
+            "category": "Delayed Consequences",
+            "accentColor": "amber",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "SecondOrder",
+                    "content": {
+                        "headline": "The Real Impact Shows Up Later"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "title": "Enterprise Translation",
+            "category": "Ignoring Scalability",
+            "accentColor": "violet",
+            "slides": [
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "IN THE PRODUCT — At scale, this shows up as Fast interfaces showing incomplete truth, Automation replacing expertise",
+                            "IN OPERATIONS — In operations, this becomes Decisions made on partial data, Systems no one fully understands",
+                            "IN REVIEWS — In product teams, it survives because Early success feels like proof, Long-term decay is invisible"
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "title": "Lesson",
+            "category": "Ignoring Scalability",
+            "accentColor": "violet",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "LessonSlide",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "We didn't break it. We outgrew it.",
+                            "And never redesigned for reality."
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "title": "Not Understanding The Domains",
+            "category": "Terminology Mismatch",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "DomainKnowledge",
+                    "content": {
+                        "headline": "The UI That Looked Correct — and Was Conceptually Wrong"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "title": "When Everything Depends on One Person",
+            "category": "Terminology Mismatch",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "OperatorIsSystem",
+                    "content": {
+                        "headline": "When Everything Depends on One Person",
                         "takeaways": [],
-                        "body": "Content to be added"
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "title": "Enterprise Translation",
+            "category": "Terminology Mismatch",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "IN THE PRODUCT — In product design, this shows up as Surface-level polish, Shallow system understanding",
+                            "IN OPERATIONS — In operations, this becomes Tools that hide constraints Interfaces that collapse under stress",
+                            "IN REVIEWS — In teams, it survives because Speed beats immersion, Theory replaces practice"
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "title": "Lesson",
+            "category": "Terminology Mismatch",
+            "accentColor": "emerald",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "LessonSlide",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "Experience doesn't teach faster.",
+                            "It teaches deeper.",
+                            "If you're willing to listen."
+                        ],
+                        "body": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "title": "Conclusion",
+            "category": "Section Title",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "ConclusionSlide",
+                    "content": {
+                        "headline": "",
+                        "takeaways": [
+                            "Good design doesn't prevent failure. It prepares people for it.",
+                            "Everything else is decoration."
+                        ],
+                        "body": ""
                     }
                 }
             ]

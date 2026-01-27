@@ -1,0 +1,122 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at center, rgba(255, 87, 51, 0.08) 0%, transparent 70%);
+}
+
+.backgroundGlow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255, 87, 51, 0.15) 0%, transparent 70%);
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.content {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.mainStatement {
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    color: #ff5733;
+    text-shadow: 0 0 60px rgba(255, 87, 51, 0.3);
+}
+
+.separator {
+    width: 500px;
+    height: 6px;
+    background: linear-gradient(90deg, transparent 0%, #ff5733 50%, transparent 100%);
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(255, 87, 51, 0.5);
+}
+
+.closingLine {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.95);
+    text-transform: uppercase;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .mainStatement {
+        font-size: 68px;
+    }
+    
+    .separator {
+        width: 400px;
+        height: 5px;
+    }
+    
+    .closingLine {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slide {
+        padding: 80px;
+    }
+    
+    .mainStatement {
+        font-size: 52px;
+    }
+    
+    .separator {
+        width: 300px;
+        height: 4px;
+    }
+    
+    .closingLine {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        padding: 40px;
+    }
+    
+    .content {
+        gap: 40px;
+    }
+    
+    .mainStatement {
+        font-size: 36px;
+    }
+    
+    .separator {
+        width: 200px;
+        height: 3px;
+    }
+    
+    .closingLine {
+        font-size: 20px;
+        letter-spacing: 0.03em;
+    }
+}
