@@ -3,8 +3,7 @@
 export const CURATED_STORY_IDS = [
     0,   // Introduction
     17,  // Section 1: Seeing the Wrong Thing
-    1,   //   - The Bullet Hole
-    2,   //   - The Streetlight Effect
+    21,  //   - Where Our Attention Goes (combined: Bullet Hole + Streetlight Effect)
     18,  // Section 2: Passing Review ≠ Being Right
     15,  //   - The PM Said It Was Fine
     8,   //   - False Consensus Effect

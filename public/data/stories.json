@@ -757,6 +757,44 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 21,
+            "title": "Where Our Attention Goes",
+            "category": "Cognitive Biases",
+            "accentColor": "coral",
+            "slides": [
+                {
+                    "type": "custom",
+                    "customComponent": "BomberPlane",
+                    "content": {
+                        "headline": "The Planes That Never Came Back"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "customComponent": "StreetlightSearch",
+                    "content": {
+                        "headline": "Where the Light Is"
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Enterprise Translation",
+                        "takeaways": [],
+                        "body": "Content to be added"
+                    }
+                },
+                {
+                    "type": "application",
+                    "content": {
+                        "headline": "Take Home",
+                        "takeaways": [],
+                        "body": "Content to be added"
+                    }
+                }
+            ]
         }
     ]
 }
