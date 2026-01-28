@@ -142,17 +142,6 @@ export default function SectionTitleSlide({ content, accentColor }: SectionTitle
                 >
                     Understanding how observation bias shapes what we see
                 </motion.p>
-
-                {/* Story Count */}
-                <motion.div
-                    className={styles.storyCount}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 3 }}
-                >
-                    <span className={styles.countNumber}>3</span>
-                    <span className={styles.countLabel}>Stories</span>
-                </motion.div>
             </motion.div>
         </div>
     );

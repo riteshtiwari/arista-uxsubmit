@@ -129,16 +129,6 @@ export default function Section4TitleSlide({ content }: Section4TitleSlideProps)
             >
                 When domain knowledge makes the difference
             </motion.p>
-
-            {/* Story count */}
-            <motion.div
-                className={styles.storyCount}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 3.0 }}
-            >
-                1 STORY
-            </motion.div>
         </div>
     );
 }

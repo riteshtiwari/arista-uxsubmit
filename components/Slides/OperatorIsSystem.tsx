@@ -12,6 +12,15 @@ interface OperatorIsSystemProps {
 export default function OperatorIsSystem({ content, accentColor }: OperatorIsSystemProps) {
     return (
         <div className={styles.slide}>
+            <motion.div
+                className={styles.sectionLabel}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+            >
+                WHAT EXPERIENCE REVEALS - <span className={styles.scarHighlight}>SCAR NO 6</span>
+            </motion.div>
+
             <motion.h1
                 className={`heading-lg ${styles.headline}`}
                 initial={{ opacity: 0, y: 30 }}
@@ -202,6 +211,17 @@ export default function OperatorIsSystem({ content, accentColor }: OperatorIsSys
                     </motion.g>
                 </svg>
             </motion.div>
+
+            {content.body && (
+                <motion.p
+                    className={`caption ${styles.caption}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 0.5 }}
+                    transition={{ duration: 0.6, delay: 2.5 }}
+                >
+                    {content.body}
+                </motion.p>
+            )}
         </div>
     );
 }

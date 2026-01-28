@@ -9,6 +9,34 @@
     text-align: center;
 }
 
+.sectionLabel {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+@keyframes scarPulse {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #ef4444, 0 0 20px #ef4444, 0 0 30px #ef4444;
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 0 0 5px #ef4444, 0 0 10px #ef4444, 0 0 15px #ef4444;
+    }
+}
+
+.scarHighlight {
+    color: #ef4444;
+    opacity: 1;
+    font-weight: 700;
+    text-shadow: 0 0 10px #ef4444, 0 0 20px #ef4444;
+    animation: scarPulse 2s ease-in-out infinite;
+}
+
 .headline {
     max-width: 900px;
     color: var(--text-primary);

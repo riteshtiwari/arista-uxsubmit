@@ -12,6 +12,15 @@ interface FalseConsensusProps {
 export default function FalseConsensus({ content, accentColor }: FalseConsensusProps) {
     return (
         <div className={styles.slide}>
+            <motion.div
+                className={styles.sectionLabel}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+            >
+                WHY IT FEELS RIGHT
+            </motion.div>
+
             <motion.h1
                 className={`heading-lg ${styles.headline}`}
                 initial={{ opacity: 0, y: 30 }}
@@ -206,7 +215,7 @@ export default function FalseConsensus({ content, accentColor }: FalseConsensusP
                 animate={{ opacity: 0.7 }}
                 transition={{ duration: 0.6, delay: 7 }}
             >
-                Internal agreement ≠ external usability
+                The echo chamber
             </motion.p>
         </div>
     );

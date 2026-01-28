@@ -9,7 +9,9 @@ export const CURATED_STORY_IDS = [
     24,  //   - Take Home
     18,  // Section 2: WHY IT FEELS RIGHT
     25,  //   - The PM Said It Was Fine
+    38,  //   - Scar No 1
     26,  //   - False Consensus Effect
+    39,  //   - Scar No 2
     27,  //   - Enterprise Translation
     28,  //   - Take Home
     19,  // Section 3: WHAT BREAKS AT SCALE

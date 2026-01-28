@@ -31,6 +31,8 @@ import Section4TitleSlide from './Section4TitleSlide';
 import LessonSlide from './LessonSlide';
 import OperatorIsSystem from './OperatorIsSystem';
 import ConclusionSlide from './ConclusionSlide';
+import ScarSlide from './ScarSlide';
+import Scar2Slide from './Scar2Slide';
 import styles from './SlideContainer.module.css';
 
 interface SlideContainerProps {
@@ -113,6 +115,10 @@ export default function SlideContainer({ slide, accentColor, slideIndex }: Slide
                     return <OperatorIsSystem content={slide.content} accentColor={accentColor} />;
                 case 'ConclusionSlide':
                     return <ConclusionSlide content={slide.content} accentColor={accentColor} />;
+                case 'ScarSlide':
+                    return <ScarSlide content={slide.content} accentColor={accentColor} />;
+                case 'Scar2Slide':
+                    return <Scar2Slide content={slide.content} accentColor={accentColor} />;
                 default:
                     return <div>Unknown custom component: {slide.customComponent}</div>;
             }

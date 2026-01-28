@@ -126,16 +126,6 @@ export default function Section3TitleSlide({ content }: Section3TitleSlideProps)
             >
                 When growth reveals hidden dependencies
             </motion.p>
-
-            {/* Story count */}
-            <motion.div
-                className={styles.storyCount}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 3.0 }}
-            >
-                3 STORIES
-            </motion.div>
         </div>
     );
 }

@@ -12,6 +12,15 @@ interface PMSignedOffProps {
 export default function PMSignedOff({ content, accentColor }: PMSignedOffProps) {
     return (
         <div className={styles.slide}>
+            <motion.div
+                className={styles.sectionLabel}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+            >
+                WHY IT FEELS RIGHT
+            </motion.div>
+
             <motion.h1
                 className={`heading-lg ${styles.headline}`}
                 initial={{ opacity: 0, y: 30 }}
@@ -135,15 +144,6 @@ export default function PMSignedOff({ content, accentColor }: PMSignedOffProps) 
                     </motion.g>
                 </svg>
             </motion.div>
-
-            <motion.p
-                className={`caption ${styles.caption}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.7 }}
-                transition={{ duration: 0.6, delay: 5 }}
-            >
-                Delegated thinking is still your responsibility
-            </motion.p>
         </div>
     );
 }

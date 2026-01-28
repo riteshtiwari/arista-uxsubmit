@@ -122,16 +122,6 @@ export default function Section2TitleSlide({ content }: Section2TitleSlideProps)
             >
                 When intuition and consensus feel convincing
             </motion.p>
-
-            {/* Story count */}
-            <motion.div
-                className={styles.storyCount}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 3.0 }}
-            >
-                4 STORIES
-            </motion.div>
         </div>
     );
 }

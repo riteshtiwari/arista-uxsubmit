@@ -28,6 +28,15 @@ const bulletHoles = [
 export default function BomberPlane({ content, accentColor }: BomberPlaneProps) {
     return (
         <div className={styles.slide}>
+            <motion.div
+                className={styles.sectionLabel}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+            >
+                WHERE OUR ATTENTION GOES
+            </motion.div>
+
             <motion.h1
                 className={`heading-lg ${styles.headline}`}
                 initial={{ opacity: 0, y: 30 }}

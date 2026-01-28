@@ -9,6 +9,15 @@
     text-align: center;
 }
 
+.sectionLabel {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
 .headline {
     max-width: 800px;
 }
@@ -50,4 +59,85 @@
     max-width: 600px;
     color: var(--text-secondary);
     margin-top: 20px;
+}
+
+/* Enterprise Translation Styling */
+.enterpriseGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.enterpriseCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-left: 3px solid currentColor;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+}
+
+.enterpriseCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.enterpriseCard:hover::before {
+    opacity: 1;
+}
+
+.enterpriseCard:hover {
+    transform: translateX(8px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.enterpriseLabel {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.95;
+}
+
+.enterpriseContent {
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .enterpriseGrid {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .enterpriseCard {
+        padding: 24px 28px;
+        gap: 12px;
+    }
+
+    .enterpriseLabel {
+        font-size: 11px;
+    }
+
+    .enterpriseContent {
+        font-size: 17px;
+    }
 }
