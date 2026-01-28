@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Story } from '@/types/content.types';
 import { CURATED_STORY_IDS } from '@/constants/navigation';
@@ -24,6 +25,39 @@ export default function ChapterNav({
 }: ChapterNavProps) {
     const router = useRouter();
     const showAllStories = viewMode === 'all';
+    const activeItemRef = useRef<HTMLButtonElement>(null);
+
+    // Scroll active item into view when currentStoryId changes
+    useEffect(() => {
+        if (activeItemRef.current && isVisible) {
+            const element = activeItemRef.current;
+            const container = element.closest(`.${styles.container}`) as HTMLElement;
+            
+            if (container) {
+                const containerRect = container.getBoundingClientRect();
+                const elementRect = element.getBoundingClientRect();
+                const filterToggleHeight = 80; // Height of filter toggle area
+                
+                // Calculate if element is below the visible area (accounting for filter toggle)
+                const visibleBottom = containerRect.bottom - filterToggleHeight;
+                const elementBottom = elementRect.bottom;
+                
+                // Calculate if element is above the visible area
+                const elementTop = elementRect.top;
+                const containerTop = containerRect.top;
+                
+                if (elementBottom > visibleBottom) {
+                    // Element is hidden below - scroll down just enough to show it
+                    const scrollAmount = elementBottom - visibleBottom;
+                    container.scrollTop += scrollAmount + 10; // +10px buffer
+                } else if (elementTop < containerTop) {
+                    // Element is hidden above - scroll up to show it
+                    const scrollAmount = containerTop - elementTop;
+                    container.scrollTop -= scrollAmount + 10; // +10px buffer
+                }
+            }
+        }
+    }, [currentStoryId, isVisible]);
 
     const handleChapterClick = (storyId: number) => {
         router.push(`/story/${storyId}/slide/0`);
@@ -137,6 +171,7 @@ export default function ChapterNav({
                         {/* Render sub-items if this is a section AND has sub-items */}
                         {item.isSection && item.subItems && item.subItems.map((subStory: Story) => (
                             <button
+                                ref={currentStoryId === subStory.id ? activeItemRef : null}
                                 key={subStory.id}
                                 className={`${styles.subItem} ${currentStoryId === subStory.id ? styles.active : ''}`}
                                 onClick={() => handleChapterClick(subStory.id)}

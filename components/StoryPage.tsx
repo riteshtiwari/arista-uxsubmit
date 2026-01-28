@@ -21,6 +21,8 @@ export default function StoryPage({ stories }: StoryPageProps) {
 
     const [currentStory, setCurrentStory] = useState<Story | null>(null);
     const [totalSlides, setTotalSlides] = useState(0);
+    const [cumulativeSlideNumber, setCumulativeSlideNumber] = useState(0);
+    const [totalCumulativeSlides, setTotalCumulativeSlides] = useState(0);
     
     // Initialize isNavVisible from localStorage (client-side only)
     const [isNavVisible, setIsNavVisible] = useState(() => {
@@ -59,8 +61,35 @@ export default function StoryPage({ stories }: StoryPageProps) {
         if (story) {
             setCurrentStory(story);
             setTotalSlides(story.slides.length);
+            
+            // Calculate cumulative slide numbers in curated mode
+            if (viewMode === 'curated') {
+                const visibleStoryIds = CURATED_STORY_IDS;
+                const visibleStories = visibleStoryIds
+                    .map(id => stories.find(s => s.id === id))
+                    .filter(Boolean) as Story[];
+                
+                // Calculate total slides across all stories
+                const total = visibleStories.reduce((sum, s) => sum + s.slides.length, 0);
+                setTotalCumulativeSlides(total);
+                
+                // Calculate cumulative slide number up to current slide
+                let cumulative = 0;
+                for (const s of visibleStories) {
+                    if (s.id === storyId) {
+                        cumulative += slideId + 1; // +1 because slideId is 0-indexed
+                        break;
+                    }
+                    cumulative += s.slides.length;
+                }
+                setCumulativeSlideNumber(cumulative);
+            } else {
+                // In 'all' mode, use per-story numbering
+                setCumulativeSlideNumber(slideId + 1);
+                setTotalCumulativeSlides(story.slides.length);
+            }
         }
-    }, [storyId, stories]);
+    }, [storyId, slideId, stories, viewMode]);
 
     // Route protection: redirect if viewing non-curated story in curated mode
     useEffect(() => {
@@ -186,8 +215,8 @@ export default function StoryPage({ stories }: StoryPageProps) {
             />
 
             <SlideIndicator
-                currentSlide={slideId}
-                totalSlides={totalSlides}
+                currentSlide={cumulativeSlideNumber}
+                totalSlides={totalCumulativeSlides}
             />
 
             {/* Main content - centered when nav is hidden */}
