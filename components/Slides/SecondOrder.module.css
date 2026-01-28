@@ -5,19 +5,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     text-align: center;
 }
 
 .headline {
     max-width: 900px;
     color: var(--text-primary);
+    margin-bottom: -10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
 }
 
 .sceneContainer {
     width: 100%;
     max-width: 1000px;
-    height: 450px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,95 +37,69 @@
     height: 100%;
 }
 
-.timeLabel {
+/* Infrastructure layer */
+.deviceBox {
+    opacity: 0.6;
+}
+
+.deviceLabel {
     fill: var(--text-muted);
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
 }
 
-.actionPoint {
-    filter: drop-shadow(0 0 12px currentColor);
+/* Automation layer */
+.healCircle {
+    opacity: 0.8;
 }
 
-.actionLabel {
-    fill: var(--text-primary);
-    font-size: 14px;
-    font-weight: 600;
+.healLabel {
+    fill: var(--accent-emerald);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
-.actionSublabel {
+/* Dashboard */
+.dashboardTitle {
     fill: var(--text-secondary);
     font-size: 12px;
-    font-style: italic;
-}
-
-/* Effects */
-.positiveEffect {
-    fill: var(--accent-emerald);
-    stroke: var(--accent-emerald);
-    stroke-width: 3;
-    filter: drop-shadow(0 0 8px var(--accent-emerald));
-}
-
-.warningEffect {
-    fill: var(--bg-secondary);
-    stroke: var(--accent-amber);
-    stroke-width: 3;
-    filter: drop-shadow(0 0 6px var(--accent-amber));
-}
-
-.negativeEffect {
-    fill: var(--bg-secondary);
-    stroke: var(--accent-coral);
-    stroke-width: 3;
-    filter: drop-shadow(0 0 8px var(--accent-coral));
-}
-
-.crisisEffect {
-    fill: var(--accent-coral);
-    stroke: var(--accent-coral);
-    stroke-width: 4;
-    filter: drop-shadow(0 0 12px var(--accent-coral));
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.6;
-    }
-}
-
-.effectLabel {
-    fill: var(--accent-emerald);
-    font-size: 13px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
-.problemLabel {
+.statusText {
     fill: var(--text-secondary);
-    font-size: 12px;
     font-weight: 500;
 }
 
-.crisisLabel {
-    fill: var(--text-primary);
-    font-size: 14px;
+.successText {
+    fill: var(--accent-emerald);
     font-weight: 700;
 }
 
-.annotation {
+/* Human */
+.humanLabel {
     fill: var(--text-muted);
-    font-size: 14px;
+}
+
+/* Second order effects */
+.rotLabel {
+    fill: var(--accent-coral);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.lessonText {
+    fill: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
     font-style: italic;
 }
 
 .caption {
-    margin-top: -10px;
+    margin-top: -5px;
     font-style: italic;
+    font-size: 16px;
 }

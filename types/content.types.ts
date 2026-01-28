@@ -11,6 +11,7 @@ export interface VisualizationData {
 export interface SlideContent {
   headline?: string;
   subheadline?: string;
+  subtitle?: string;
   visual?: string;
   source?: string;
   takeaways?: string[];

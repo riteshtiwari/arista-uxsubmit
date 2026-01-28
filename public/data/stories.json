@@ -915,7 +915,7 @@
         },
         {
             "id": 30,
-            "title": "Second-Order Effects",
+            "title": "Second Order Effect",
             "category": "Delayed Consequences",
             "accentColor": "amber",
             "slides": [
@@ -923,7 +923,8 @@
                     "type": "custom",
                     "customComponent": "SecondOrder",
                     "content": {
-                        "headline": "The Real Impact Shows Up Later"
+                        "headline": "The Auto-Heal Trap",
+                        "subtitle": "Second-Order Effects"
                     }
                 }
             ]
