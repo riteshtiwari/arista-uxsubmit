@@ -59,7 +59,7 @@ export default function ApplicationSlide({ content, accentColor }: ApplicationSl
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    Enterprise Translation
+                    {content.headline || 'Enterprise Translation'}
                 </motion.h2>
 
                 <div className={styles.enterpriseGrid}>
@@ -123,18 +123,34 @@ export default function ApplicationSlide({ content, accentColor }: ApplicationSl
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    {content.takeaways.map((takeaway, index) => (
-                        <motion.li
-                            key={index}
-                            className={`body-lg ${styles.takeaway}`}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                        >
-                            <span className={`${styles.bullet} accent-${accentColor}`}>→</span>
-                            {takeaway}
-                        </motion.li>
-                    ))}
+                    {content.takeaways.map((takeaway, index) => {
+                        // Split by newline to separate hero from examples
+                        const lines = takeaway.split('\n');
+                        const heroLine = lines[0];
+                        const exampleLine = lines.slice(1).join('\n');
+
+                        return (
+                            <motion.li
+                                key={index}
+                                className={`${styles.takeaway}`}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
+                            >
+                                <span className={`${styles.bullet} accent-${accentColor}`}>→</span>
+                                <div className={styles.takeawayContent}>
+                                    <div className={`${styles.heroLine} accent-${accentColor}`}>
+                                        {heroLine}
+                                    </div>
+                                    {exampleLine && (
+                                        <div className={styles.exampleLine}>
+                                            {exampleLine}
+                                        </div>
+                                    )}
+                                </div>
+                            </motion.li>
+                        );
+                    })}
                 </motion.ul>
             )}
 

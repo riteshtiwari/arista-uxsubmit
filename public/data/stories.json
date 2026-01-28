@@ -790,20 +790,20 @@
         },
         {
             "id": 23,
-            "title": "Enterprise Translation",
+            "title": "Where Attention Drifts",
             "category": "Cognitive Biases",
             "accentColor": "coral",
             "slides": [
                 {
                     "type": "application",
                     "content": {
-                        "headline": "Enterprise Translation",
+                        "headline": "Where Attention Drifts",
                         "takeaways": [
-                            "IN THE PRODUCT — Polished demos and green dashboards. Everything looks fine.",
-                            "IN OPERATIONS — Blind spots during failures and escalations. That's when people realize they don't actually understand what's happening.",
-                            "IN REVIEWS — Only visible metrics are discussed. We review what's measurable. We don't review what's missing."
+                            "We optimize what looks good.\nPolished demos. Green dashboards. Happy paths.",
+                            "We under-invest in what saves us.\nDebugging. Recovery. Failure paths.",
+                            "We review what's visible.\nNot what's missing."
                         ],
-                        "body": ""
+                        "body": "And then we're surprised by outages."
                     }
                 }
             ]
@@ -877,20 +877,20 @@
         },
         {
             "id": 27,
-            "title": "Enterprise Translation",
+            "title": "Why Bad Decisions Feel Safe",
             "category": "Designer Accountability",
             "accentColor": "amber",
             "slides": [
                 {
                     "type": "application",
                     "content": {
-                        "headline": "",
+                        "headline": "Why Bad Decisions Feel Safe",
                         "takeaways": [
-                            "IN THE PRODUCT — Authority replaces evidence, and internal comfort replaces actual user reality.",
-                            "IN OPERATIONS — Fragile systems that look stable — tools that survive demos but fail under pressure.",
-                            "IN REVIEWS — Disagreement feels risky, and silence gets mistaken for consensus."
+                            "We borrow confidence from authority.\n\"The PM vetted it.\" \"Leadership aligned.\" \"Engineering signed off.\"",
+                            "We mistake silence for agreement.\nNo objections feels like validation.",
+                            "We confuse speed with correctness.\nFast decisions feel smart."
                         ],
-                        "body": ""
+                        "body": "And uncertainty gets quietly removed."
                     }
                 }
             ]
@@ -948,18 +948,19 @@
         },
         {
             "id": 31,
-            "title": "Enterprise Translation",
+            "title": "What Breaks at Scale",
             "category": "Ignoring Scalability",
             "accentColor": "violet",
             "slides": [
                 {
                     "type": "application",
                     "content": {
-                        "headline": "",
+                        "headline": "What Breaks at Scale",
                         "takeaways": [
-                            "IN THE PRODUCT — Fast interfaces that hide incomplete truth, and automation quietly replacing expertise.",
-                            "IN OPERATIONS — Decisions made on partial data, inside systems no one fully understands anymore.",
-                            "IN REVIEWS — Early success feels like proof, and long-term decay stays invisible."
+                            "Signal turns into noise",
+                            "Critical data disappears",
+                            "Recovery becomes slow and risky",
+                            "Only experts can operate it"
                         ],
                         "body": ""
                     }
@@ -1020,18 +1021,19 @@
         },
         {
             "id": 35,
-            "title": "Enterprise Translation",
+            "title": "What Experience Reveals",
             "category": "Terminology Mismatch",
             "accentColor": "emerald",
             "slides": [
                 {
                     "type": "application",
                     "content": {
-                        "headline": "",
+                        "headline": "What Experience Reveals",
                         "takeaways": [
-                            "IN THE PRODUCT — Surface-level polish without deep system understanding.",
-                            "IN OPERATIONS — Tools that hide constraints and collapse under stress.",
-                            "IN REVIEWS — Speed beats immersion, and theory replaces practice."
+                            "Beautiful UIs fail quietly.",
+                            "Operators don't need \"more.\" They need \"clear.\"",
+                            "Domain signals > visual polish.",
+                            "3 AM is the real usability test."
                         ],
                         "body": ""
                     }
